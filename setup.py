@@ -2,7 +2,6 @@ from setuptools import setup
 
 with open('README.rst') as f:
     readme = f.read()
-    next(readme)
     long_description = ''.join(readme).strip()
 
 setup(
