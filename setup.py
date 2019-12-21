@@ -1,8 +1,7 @@
 from setuptools import setup
 
-with open('README.rst') as readme:
-    next(readme)
-    long_description = ''.join(readme).strip()
+this_dir = os.path.dirname(__file__)
+long_description = "\n" + open(os.path.join(this_dir, 'README.rst')).read()
 
 setup(
     name='simple-rbac',
